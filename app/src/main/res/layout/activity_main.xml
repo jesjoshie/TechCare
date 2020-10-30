@@ -133,7 +133,15 @@
                 android:text="Sign-Up"
                 android:textStyle="normal" />
 
-
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:paddingLeft="120dp"
+                />
 
 
         </LinearLayout>
