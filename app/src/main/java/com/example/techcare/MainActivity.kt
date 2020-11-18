@@ -2,20 +2,24 @@ package com.example.techcare
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val Button2 = findViewById<View>(R.id.button1) as Button
+        findViewById<Button>(R.id.loginBtn).setOnClickListener{login()}
+        findViewById<Button>(R.id.signupBtn).setOnClickListener{signup()}
+    }
+    private fun login(){
+        val intent = Intent(this, Create_account::class.java)
+        startActivity(intent)
+    }
+    private  fun signup(){
+        val intent1 = Intent(this,Signup::class.java)
+        startActivity(intent1)
 
-
-        Button2.setOnClickListener {
-            val int1 = Intent(this@MainActivity, Signup::class.java)
-            startActivity(int1)
-        }
     }
 }
