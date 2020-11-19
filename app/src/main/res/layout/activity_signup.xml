@@ -64,7 +64,7 @@
                 android:background="@drawable/rounded_white"
                 android:drawablePadding="5dp"
                 android:hint="Email"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:paddingBottom="5dp"
