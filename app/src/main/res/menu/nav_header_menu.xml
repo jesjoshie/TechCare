@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item
+    <item
+        android:id="@+id/miItem"
+
+        android:title=""/>
+
+    <item
     android:id="@+id/miItem1"
+    android:icon="@drawable/testaccount"
     android:title="Health Profile"/>
     <item
         android:id="@+id/miItem2"
+        android:icon="@drawable/cyclefemale"
         android:title="Cycle and Ovulation"/>
     <item
         android:id="@+id/miItem3"
+        android:icon="@drawable/settings"
         android:title="Settings"/>
 
     <item
         android:id="@+id/miItem4"
+        android:icon="@drawable/help"
         android:title="Help"/>
     <item
         android:id="@+id/miItem5"
+        android:icon="@drawable/info"
         android:title="About"/>
 
 
