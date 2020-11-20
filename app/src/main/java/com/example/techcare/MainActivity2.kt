@@ -1,5 +1,6 @@
 package com.example.techcare
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,6 +10,10 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity2 : AppCompatActivity() {
@@ -18,7 +23,17 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
         val imgmenu = findViewById<ImageView>(R.id.imagemenu)
         val drawerlayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-        val navView =findViewById<NavigationView>(R.id.nav_view)
+        val navView = findViewById<NavigationView>(R.id.nav_view)
+        val navController = Navigation.findNavController(this,R.id.navdHostFragment)
+        NavigationUI.setupWithNavController(navView,navController)
+        imgmenu.setOnClickListener(){
+            drawerlayout.openDrawer(GravityCompat.START)
+        }
+    }
+
+
+}
+/*
         imgmenu.setOnClickListener(){
             drawerlayout.openDrawer(GravityCompat.START)
         }
@@ -31,6 +46,8 @@ class MainActivity2 : AppCompatActivity() {
             when(it.itemId){
             R.id.miItem1 -> Toast.makeText(this,
                 "Health Profile",Toast.LENGTH_SHORT).show()
+
+
                 R.id.miItem2 -> Toast.makeText(this,
                     "Cycle and Ovulation",Toast.LENGTH_SHORT).show()
 
@@ -53,6 +70,6 @@ class MainActivity2 : AppCompatActivity() {
         if(toggle.onOptionsItemSelected(item)){
             return true
         }
-        return super.onOptionsItemSelected(item)
-    }
-}
+        return super.onOptionsItemSelected(item)*/
+
+

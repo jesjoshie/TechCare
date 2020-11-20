@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:paddingTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida nulla sed orci dictum fermentum. Praesent condimentum suscipit mauris a semper. Vivamus imperdiet dolor felis, quis pharetra ante posuere at. Cras rutrum dapibus nisi, a dignissim nunc lobortis at. Maecenas tempus consectetur mi id feugiat. Phasellus facilisis tristique mi non auctor. Curabitur blandit orci nec mi tempus, nec lobortis eros viverra. Mauris euismod, urna sit amet gravida lobortis, mi risus sollicitudin elit, non pellentesque elit lectus in justo.
+
+Cras non rhoncus lectus. Cras non ex pharetra tellus rutrum pellentesque id id enim. Sed sit amet risus enim. Nam consectetur elit mollis, tincidunt nunc at, varius risus. Aenean blandit venenatis mauris. Vivamus molestie magna vitae sapien posuere, vitae placerat tellus ullamcorper. Proin ultricies diam eu porta cursus. Ut rutrum diam ut enim tristique porttitor."
+
+
+        android:textSize="20sp"/>
+
+</FrameLayout>

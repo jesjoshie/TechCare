@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TechCare">
-        <activity android:name=".MainActivity2"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-
+        <activity android:name=".Profile"></activity>
+        <activity
+            android:name=".MainActivity2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Create_account"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
