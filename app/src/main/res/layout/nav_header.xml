@@ -12,6 +12,7 @@
         android:layout_width="78dp"
         android:layout_height="92dp"
         android:src="@drawable/profilepic"
+        app:riv_oval="true"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="55dp" />

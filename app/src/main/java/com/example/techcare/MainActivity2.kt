@@ -26,7 +26,7 @@ class MainActivity2 : AppCompatActivity() {
         val navView = findViewById<NavigationView>(R.id.nav_view)
         val navController = Navigation.findNavController(this,R.id.navdHostFragment)
         NavigationUI.setupWithNavController(navView,navController)
-        imgmenu.setOnClickListener(){
+        imgmenu.setOnClickListener{
             drawerlayout.openDrawer(GravityCompat.START)
         }
     }

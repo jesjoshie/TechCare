@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.signupBtn).setOnClickListener{signup()}
     }
     private fun login(){
-        val intent = Intent(this, Create_account::class.java)
+        val intent = Intent(this, chatbot::class.java)
         startActivity(intent)
     }
     private  fun signup(){

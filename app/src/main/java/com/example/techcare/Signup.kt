@@ -13,7 +13,7 @@ class Signup : AppCompatActivity() {
         findViewById<Button>(R.id.imageButton2).setOnClickListener{createacc()}
     }
     private fun createacc(){
-        val intent = Intent(this, Create_account::class.java)
+        val intent = Intent(this, chatbot::class.java)
         startActivity(intent)
     }
 }
